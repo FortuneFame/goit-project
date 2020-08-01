@@ -1,0 +1,52 @@
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__item--position {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__email,
+    &__phone {
+        color: $text-color;
+        transition: color $timing-function;
+    }
+    &__email:focus ,
+    &__phone:focus {
+        color: $accent-color;
+    }
+    &__item--position:hover &__email,
+    &__item--position:hover &__phone  {
+    color: $accent-color;
+    }
+ }
+.auth-nav__icon {
+        margin-right: 10px;
+        fill: $text-color;
+        transition: fill $timing-function;
+    &--size-email {
+        width: 16px;
+        height: 12px;
+    }
+    &--size-phone {
+        width: 10px;
+        height: 15px;
+    }
+    .auth-nav__item--position:hover & {
+        fill: $accent-color;
+    }
+  }
+ 
+  
+ 
+  
+ 
+  
+ 
+  

@@ -1,0 +1,39 @@
+.service {
+    display: flex;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $white-color;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__item:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+.service__card {
+    position: relative;
+    display: block;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 88%;
+        left: 50%;
+        transform: $translate-center;
+        width: 370px;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+    &--title {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: $translate-center;
+        width: 370px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  }
+  
+ 
+  

@@ -1,0 +1,21 @@
+.social-icons__join,
+.form__label--title {
+  display: block;
+  margin-bottom: 20px;
+  color: $white-color;
+  text-transform: uppercase;
+}
+.social-icons--footer {
+  padding-bottom: 56px;
+  margin-right: 90px
+}
+.soc-icon-list {
+  display: flex;
+}
+.social-icons__list {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:not(:last-child) {
+        margin-right: 10px;
+      }
+}

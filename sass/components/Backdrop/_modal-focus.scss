@@ -1,0 +1,13 @@
+
+.modal__field:focus-within > .modal__svg {
+ fill: $accent-color;
+}
+.modal__field:focus-within > .modal__label {
+  color: $accent-color;
+  transform: translate(-70%, -300%);
+ }
+.modal__field:focus-within > .modal__input,
+.modal__textarea:focus  {
+  border: 1px solid $accent-color;
+  outline: 0;
+} 

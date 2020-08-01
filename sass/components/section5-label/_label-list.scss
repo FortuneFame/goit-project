@@ -1,0 +1,28 @@
+.label-list {
+    display: flex;
+    &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+    &__border {
+    @include centeredFlex();
+    // display: flex;
+    border: 1px solid $border-lab-color;
+    border-radius: 4px;
+    // justify-content: center;
+    // align-items: center;
+    width: 170px;
+    height: 90px;
+  }
+    &__img {
+    fill: $border-lab-color;
+    transition: fill $timing-function;
+  }
+    &__border:hover {
+    border-color: $accent-color;
+    transition: border-color $timing-function;
+  }
+    &__border:hover &__img {
+    fill: $accent-color;
+  }
+}
+  

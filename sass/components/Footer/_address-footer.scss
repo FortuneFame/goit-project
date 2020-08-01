@@ -1,0 +1,29 @@
+
+.address-footer {
+    margin-right: 69px;
+    padding-bottom: 28px;
+    &__logo {
+        display: block;
+        margin-bottom: 8px;
+        color: $white-color;
+      }
+  }
+.contacts {
+    color: $footer-contacts-color;
+    line-height: 1.71;
+    &__item {
+        color: $white-color;
+        font-style: normal;
+    }
+  }
+.footer-bg {
+    background-color: $footer-bg-color;
+  }
+/* Флекс футера */
+.footer--flex {
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
+    @include centeredFlex(flex,baseline,space-between);
+    padding-top: 48px;
+  }

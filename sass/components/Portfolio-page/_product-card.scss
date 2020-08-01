@@ -1,0 +1,100 @@
+.examples-product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.product-card {
+    width: calc((100% - 90px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    & {
+        transition: box-shadow $timing-function;
+    }
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__meta {
+        width: 370px;
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        border-right: 1px solid $border-card-color;
+        border-bottom: 1px solid $border-card-color;
+        border-left: 1px solid $border-card-color;
+    }
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+    &__title {
+        margin-top: 0px;
+        margin-bottom: 4px;
+        color: $primary-text-color;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+    &__outline {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $text-color;
+        font-size: 16px;
+        line-height: 1.94;
+    }
+    &__popup {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 63px;
+        padding-right: 24px;
+        padding-bottom: 63px;
+        padding-left: 24px;
+        color: $white-color;
+        font-size: 18px;
+        line-height: 1.67;
+    }
+  }
+.product-card__thumb {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: $translate-center;
+        transition: transform $timing-function,
+        opacity $timing-function;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        opacity: 0;
+    }
+    &:hover::before {
+        opacity: 1;
+        transform: $translate-center;
+    }
+  }
+.product-card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform $timing-function, 
+    opacity $timing-function;
+    opacity: 0;
+    .product-card__thumb:hover & {
+        opacity: 1;
+        transform: translateY(0%); 
+    }
+  }
+
+  
+  
+  
+ 
+  
+  
+ 
