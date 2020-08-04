@@ -1,5 +1,7 @@
 .sait-nav {
-    // display: flex;
+    @media screen and (min-width:  1200px) {
+      display: flex;
+    }
     &__item:not(:last-child){
         margin-right: 50px;
     } 

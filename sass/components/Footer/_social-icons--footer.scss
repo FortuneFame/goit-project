@@ -4,17 +4,29 @@
   margin-bottom: 20px;
   color: $white-color;
   text-transform: uppercase;
-  text-align: center;//mobail
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 .social-icons--footer {
   padding-bottom: 56px;
-  // margin-right: 90px
-  margin-left: auto;//mobail
-  margin-right: auto;//mobail
+  
+  @media screen and (min-width: 480px) {
+  margin-left: auto;
+  margin-right: auto;
+  }
+ 
+  @media screen and (min-width:  1200px) {
+    margin-left: 69px;
+  }
 }
 .soc-icon-list {
-  // display: flex;
-  @include centeredFlex();//mobail
+  @media screen and (min-width: 480px) {
+    @include centeredFlex(); 
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .social-icons__list {
     border-radius: 50%;

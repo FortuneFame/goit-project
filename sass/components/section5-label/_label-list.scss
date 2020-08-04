@@ -1,15 +1,14 @@
 .label-list {
-    // display: flex;
+    @media screen and (min-width:  1200px) {
+      display: flex;
+    }
     &__item:not(:last-child) {
     margin-right: 30px;
   }
     &__border {
     @include centeredFlex();
-    // display: flex;
     border: 1px solid $border-lab-color;
     border-radius: 4px;
-    // justify-content: center;
-    // align-items: center;
     width: 170px;
     height: 90px;
   }

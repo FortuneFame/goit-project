@@ -1,11 +1,19 @@
 .main-nav {
-    // display: flex;
-    // align-items: center;
+  @media screen and (min-width:  1200px) {
+    display: flex;
+    align-items: center;
+  }
+  
     border-bottom: 1px solid $border-head-color;
   }
   
   .navigation {
-    // display: flex;
-    // align-items: center;
-    // @include centeredFlex();
+    @media screen and (min-width:  1200px) {
+      display: flex;
+      align-items: center;
+      @include centeredFlex();
+    }
   }
+
+
+ 

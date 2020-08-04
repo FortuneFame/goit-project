@@ -1,33 +1,26 @@
 .examples-product {
-    // display: flex;
-    // flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
   }
 .product-card:not(:last-child) {
-    // width: calc((100% - 90px) / 3);
-    // margin-right: 30px;
     margin-bottom: 30px;
-    & {
-        transition: box-shadow $timing-function;
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 3);
+        margin-right: 30px;
+      }
+    &:nth-child(3n) {
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+      }
+     }
+    &:nth-last-child(-n + 3) {
+    @media screen and (min-width:  1200px) {
+        margin-bottom: 0;
+      }
     }
-    &:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    &__meta {
-        // width: 370px;
-        padding-top: 20px;
-        padding-right: 24px;
-        padding-bottom: 20px;
-        padding-left: 24px;
-        border-right: 1px solid $border-card-color;
-        border-bottom: 1px solid $border-card-color;
-        border-left: 1px solid $border-card-color;
-    }
-    // &:nth-child(3n) {
-    //     margin-right: 0;
-    // }
-    // &:nth-last-child(-n + 3) {
-    //     margin-bottom: 0;
-    // }
     &__title {
         margin-top: 0px;
         margin-bottom: 4px;
@@ -43,7 +36,33 @@
         font-size: 16px;
         line-height: 1.94;
     }
-    &__popup {
+    
+}
+ 
+
+.product-card {
+    transition: box-shadow $timing-function;
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+.product-card__meta {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid $border-card-color;
+    border-bottom: 1px solid $border-card-color;
+    border-left: 1px solid $border-card-color;
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+      }
+}
+
+.product-card__popup {
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 63px;
@@ -53,8 +72,8 @@
         color: $white-color;
         font-size: 18px;
         line-height: 1.67;
-    }
-  }
+}
+
 .product-card__thumb {
     position: relative;
     overflow: hidden;

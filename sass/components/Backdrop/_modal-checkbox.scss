@@ -1,17 +1,22 @@
 .modal-checkbox {
-    // display: flex;
-    // align-items: center;
     @include centeredFlex();
-    // margin-left: 53px;
-    // margin-right: 52px;
-    margin-left: 40px;//mobail
-    margin-right: 40px;//mobail
+    margin-left: 40px;//mobail table
+    margin-right: 40px;//mobail table
     margin-bottom: 30px;
+    
+    @media screen and (min-width:  1200px) {
+    margin-left: 52px;
+    margin-right: 52px;
+      }
     &__label {
         display: inline-block;
         color: $text-color;
         letter-spacing: $main-let-spac;
-        font-size: 12px;//mobail
+        font-size: 12px;//mobail table
+        
+        @media screen and (min-width:  1200px) {
+        font-size: 14px
+          }
          
         &--link {
         color: $accent-color;

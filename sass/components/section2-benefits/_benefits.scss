@@ -1,5 +1,7 @@
 .benefits {
-    // display: flex;
+    @media screen and (min-width:  1200px) {
+      display: flex;
+    }
     &__title {
         margin-top: 0;
         margin-bottom: 10px;
@@ -8,24 +10,27 @@
       }
     &__bg-icon {
         @include centeredFlex();
-        // width: 270px;
-        // height: 120px;
-        // // display: flex;
-        // // justify-content: center;
-        // // align-items: center;
+        @media screen and (min-width:  1200px) {
+        width: 270px;
+        height: 120px;
+        }
         margin-bottom: 30px;
         background-color:$icon-and-section-bg-color;
       }
     &__item:not(:last-child) {
-        // margin-right: 30px;
+        @media screen and (min-width:  1200px) {
+          margin-right: 30px;
+        }
       } 
     &__text {
-        // width: 270px;
         margin-top: 0;
-        // margin-bottom: 0;
         margin-bottom: 30px; // mobail
         color: $text-color;
         line-height: 1.71;
+        @media screen and (min-width:  1200px) {
+          width: 270px;
+          margin-bottom: 0;
+        }
      }
   }
 

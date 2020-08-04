@@ -9,4 +9,7 @@
     font-size: 12px;
     line-height: 2;
     text-align: center;
+    @media screen and (min-width:  1200px) {
+      display: block;
+    }
   }

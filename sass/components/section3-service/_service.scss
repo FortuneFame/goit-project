@@ -1,6 +1,8 @@
 .service {
-    display: flex;
     display: none;//mobail
+    @media screen and (min-width:  1200px) {
+        display: flex;
+      }
     &__title {
         margin-top: 0;
         margin-bottom: 0;

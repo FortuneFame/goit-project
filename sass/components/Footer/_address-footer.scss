@@ -1,35 +1,53 @@
 
 .address-footer {
-    // margin-right: 69px;
-    // padding-bottom: 28px;
-    text-align: center; //mobail
-    &__logo {
+      &__logo {
         display: block;
-        margin-bottom: 8px;
+        // margin-bottom: 8px; 
         color: $white-color;
-        margin-left: auto;//mobail
-        margin-right: auto;//mobail
+        @media screen and (min-width: 480px) {
+          text-align: center; //mobail
+          margin-left: auto;//mobail
+          margin-right: auto;//mobail
+        }
+        @media screen and (min-width:  1200px) {
+          margin-right: 62px;
+          padding-bottom: 20px;
+        }
       }
   }
 .contacts {
+    @media screen and (min-width: 480px) {
+      text-align: center;//mobail
+      margin-bottom: 60px;//mobail
+    }
     color: $footer-contacts-color;
     line-height: 1.71;
-    text-align: center;//mobail
-    margin-bottom: 60px;//mobail
-    &__item {
-        color: $white-color;
-        font-style: normal;
-    }
   }
+  .contacts__item {
+    color: $white-color;
+    font-style: normal;
+}
+
 .footer-bg {
     background-color: $footer-bg-color;
   }
 /* Флекс футера */
 .footer--flex {
-    // display: flex;
-    // align-items: baseline;
-    // justify-content: space-between;
-    // @include centeredFlex(flex,baseline,space-between);
-    // padding-top: 48px;
     padding-top: 60px;//mobail
+    
+    // @media screen and (min-width: 480px) {
+    //   width: 480px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+    // }
+
+    @media screen and (min-width:  1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    @include centeredFlex(flex,baseline,space-between);
+    padding-top: 48px;
+    }
   }
