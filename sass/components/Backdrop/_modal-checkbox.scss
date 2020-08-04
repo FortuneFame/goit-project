@@ -2,13 +2,16 @@
     // display: flex;
     // align-items: center;
     @include centeredFlex();
-    margin-left: 53px;
-    margin-right: 52px;
+    // margin-left: 53px;
+    // margin-right: 52px;
+    margin-left: 40px;//mobail
+    margin-right: 40px;//mobail
     margin-bottom: 30px;
     &__label {
         display: inline-block;
         color: $text-color;
         letter-spacing: $main-let-spac;
+        font-size: 12px;//mobail
          
         &--link {
         color: $accent-color;

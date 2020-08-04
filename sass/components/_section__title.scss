@@ -4,5 +4,9 @@
     color: $primary-text-color;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
+    // text-align: center;
+  }
+
+  .section__title--none {
+    display: none;
   }

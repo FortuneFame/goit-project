@@ -4,13 +4,17 @@
   margin-bottom: 20px;
   color: $white-color;
   text-transform: uppercase;
+  text-align: center;//mobail
 }
 .social-icons--footer {
   padding-bottom: 56px;
-  margin-right: 90px
+  // margin-right: 90px
+  margin-left: auto;//mobail
+  margin-right: auto;//mobail
 }
 .soc-icon-list {
-  display: flex;
+  // display: flex;
+  @include centeredFlex();//mobail
 }
 .social-icons__list {
     border-radius: 50%;

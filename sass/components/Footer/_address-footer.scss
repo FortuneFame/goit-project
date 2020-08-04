@@ -1,16 +1,21 @@
 
 .address-footer {
-    margin-right: 69px;
-    padding-bottom: 28px;
+    // margin-right: 69px;
+    // padding-bottom: 28px;
+    text-align: center; //mobail
     &__logo {
         display: block;
         margin-bottom: 8px;
         color: $white-color;
+        margin-left: auto;//mobail
+        margin-right: auto;//mobail
       }
   }
 .contacts {
     color: $footer-contacts-color;
     line-height: 1.71;
+    text-align: center;//mobail
+    margin-bottom: 60px;//mobail
     &__item {
         color: $white-color;
         font-style: normal;
@@ -24,6 +29,7 @@
     // display: flex;
     // align-items: baseline;
     // justify-content: space-between;
-    @include centeredFlex(flex,baseline,space-between);
-    padding-top: 48px;
+    // @include centeredFlex(flex,baseline,space-between);
+    // padding-top: 48px;
+    padding-top: 60px;//mobail
   }
