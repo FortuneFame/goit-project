@@ -4,11 +4,11 @@
     color: $primary-text-color;
     font-size: 36px;
     line-height: 1.16;
-    @media screen and (min-width:  1200px) {
-      text-align: center;
-    }
+    text-align: center;
   }
 
   .section__title--none {
-    display: none;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
