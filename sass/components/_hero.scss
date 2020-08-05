@@ -26,9 +26,13 @@
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        
+        @media screen and (min-width: 700px) {
+            width: 700px;
+        }
         @media screen and (min-width:  1200px) {
             width: 770px;
-           }
+        }
       } 
     &__button {
         display: inline-block;
