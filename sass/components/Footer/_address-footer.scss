@@ -1,5 +1,11 @@
 
 .address-footer {
+      @media screen and (min-width: 768px) {
+        margin-left: 76px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-left: 0px;
+      }
       &__logo {
         display: block;
         color: $white-color;
@@ -9,10 +15,7 @@
           margin-right: auto;//mobail
           margin-bottom: 20px;
         }
-        // @media screen and (min-width: 768px) {
-        //   text-align: left; 
-        //   margin-bottom: 20px;
-        // }
+        
         @media screen and (min-width:  1200px) {
           margin-right: 62px;
           margin-bottom: 8px;
@@ -22,10 +25,7 @@
 .contacts {
       text-align: center;//mobail
       margin-bottom: 60px;//mobail
-      // @media screen and (min-width: 768px) {
-      //   text-align: left;
-      //   margin-bottom: 20px;
-      // }
+      
       @media screen and (min-width: 1200px) {
         text-align: left;
         margin-bottom: 0;
@@ -52,20 +52,16 @@
 .footer--flex {
     padding-top: 60px;//mobail
     
-    // @media screen and (min-width: 480px) {
-    //   width: 480px;
-    // }
-
     @media screen and (min-width: 768px) {
       display: flex;
-      justify-content: space-around;
-      
+      flex-wrap: wrap;
     }
 
     @media screen and (min-width:  1200px) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    flex-wrap: nowrap;
     @include centeredFlex(flex,baseline,space-between);
     padding-top: 48px;
     }

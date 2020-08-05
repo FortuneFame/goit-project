@@ -68,10 +68,10 @@
     @media screen and (min-width: 480px) {
       padding-bottom: 60px;
     }
-    // @media screen and (min-width: 768px) {
-    //   order: 1;
-    //   align-self: flex-end;
-    // }
+    @media screen and (min-width: 768px) {
+      margin-left: auto;//mobail
+      margin-right: auto;//mobail
+    }
     @media screen and (min-width:  1200px) {
       display: flex;
       align-items: flex-end;
