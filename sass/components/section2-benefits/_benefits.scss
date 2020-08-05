@@ -1,6 +1,12 @@
 .benefits {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
     @media screen and (min-width:  1200px) {
       display: flex;
+      flex-wrap: nowrap;
     }
     &__title {
         margin-top: 0;
@@ -12,32 +18,37 @@
         @include centeredFlex();
         @media screen and (min-width:  1200px) {
         width: 270px;
-        height: 120px;
         }
+        height: 120px;
         margin-bottom: 30px;
         background-color:$icon-and-section-bg-color;
       }
-    &__item:not(:last-child) {
-        @media screen and (min-width:  1200px) {
-          margin-right: 30px;
-        }
-      } 
     &__text {
         margin-top: 0;
-        margin-bottom: 30px; // mobail
         color: $text-color;
         line-height: 1.71;
-        @media screen and (min-width:  1200px) {
+
+          @media screen and (min-width:  1200px) {
           width: 270px;
           margin-bottom: 0;
         }
-     }
+      }
+   }      
+
+.benefits__item {
+      @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    &:not(:last-child) {
+      @media screen and (min-width:  480px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
   }
 
-  
-
-
  
-  
-  
  
