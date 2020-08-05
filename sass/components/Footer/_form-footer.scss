@@ -63,10 +63,13 @@
     }
   }
 .footer--form {
-    padding-bottom: 50px;
+    @media screen and (min-width: 480px) {
+      padding-bottom: 60px;
+    }
     @media screen and (min-width:  1200px) {
       display: flex;
       align-items: flex-end;
       @include centeredFlex(flex,flex-end);
+      padding-bottom: 0;
     }
   }  

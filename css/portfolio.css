@@ -491,7 +491,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -750,8 +750,10 @@ img {
   background-image: url(../images/SmallIcon/IconSend.svg);
 }
 
-.footer--form {
-  padding-bottom: 50px;
+@media screen and (min-width: 480px) {
+  .footer--form {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -767,6 +769,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 0;
   }
 }
 

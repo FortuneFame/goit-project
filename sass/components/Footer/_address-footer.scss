@@ -20,7 +20,7 @@
       margin-bottom: 60px;//mobail
       @media screen and (min-width: 1200px) {
         text-align: left;
-        margin-bottom: 20px;
+        margin-bottom: 0;
       }
       &__item {
         color: $white-color;
