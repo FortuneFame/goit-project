@@ -19,11 +19,14 @@
   .menu-button {
     display: inline-flex;
     align-items: center;
-    margin-left: 257px;
+    margin-left: auto;
     padding: 10px 0;
     border: none;
     background-color: transparent;
     &__cross {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
       display: none;
     }
     // &__menu {
@@ -44,12 +47,15 @@
     top: 100%;
     left: 0;
     width: 100%;
-    // height: 600px;
+    height: 453px;
     padding: 20px;
     text-align: center;
     background-color: $white-color;
     font-size: 20px;
     &--is-open {
       display: block;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }

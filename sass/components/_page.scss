@@ -5,4 +5,7 @@
     letter-spacing: $main-let-spac;
     font-size: $main-font-size;
     line-height: $main-li-heig;
+    &.modal-open {
+        overflow: hidden;
+    }
  }
