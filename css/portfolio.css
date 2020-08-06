@@ -98,6 +98,7 @@ img {
 }
 
 .main-nav {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -123,31 +124,62 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 257px;
+  padding: 10px 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button__cross {
+  display: none;
+}
+
+.menu-button--is-open .menu-button__cross {
+  display: block;
+}
+
+.menu-button--is-open .menu-button__menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+.menu-container--is-open {
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .sait-nav {
+    display: none;
   }
 }
 
@@ -212,6 +244,12 @@ img {
   margin-left: auto;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .auth-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
