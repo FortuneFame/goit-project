@@ -4,11 +4,7 @@
         flex-wrap: wrap;
         margin: -15px;
       }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-  }
+}
 .product-card:not(:last-child) {
     margin-bottom: 30px;
     
@@ -42,7 +38,6 @@
         font-size: 16px;
         line-height: 1.94;
     }
-    
 }
  
 .product-card {

@@ -1,27 +1,19 @@
 .label-list {
-      display: flex;
-      flex-wrap: wrap;
-    
-      @media screen and (min-width: 480px) {
-        margin: -15px;
-      }
-
-      @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+     
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+  &__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 3 * 30px) / 3);
+      margin: 15px;
     }
-    &__item {
-      
-      @media screen and (min-width: 0px) {
-        width: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
-      }
-        
-      @media screen and (min-width: 768px) {
-        width: calc((100% - 3 * 30px) / 3);
-        margin: 15px;
-      }
-    }
+  }
     
     // &__item:not(:last-child) {
     //   // margin-bottom: 30px;
@@ -30,24 +22,25 @@
     //   //   margin-bottom: 0;
     //   // }
     
-    &__border {
+  &__border {
     @include centeredFlex();
     border: 1px solid $border-lab-color;
     border-radius: 4px;
     height: 90px;
+      
     @media screen and (min-width: 1200px) {
       width: 170px;
     }
   }
-    &__img {
+  &__img {
     fill: $border-lab-color;
     transition: fill $timing-function;
   }
-    &__border:hover {
+  &__border:hover {
     border-color: $accent-color;
     transition: border-color $timing-function;
   }
-    &__border:hover &__img {
+  &__border:hover &__img {
     fill: $accent-color;
   }
 }
