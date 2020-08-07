@@ -1,14 +1,11 @@
 .head-button {
-    @media screen and (min-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
     @media screen and (min-width: 768px) {
-        @include centeredFlex();
+      @include centeredFlex();
     }
-  
-    margin-bottom: 50px;
+      
     &__item:not(:last-child) {
         margin-right: 8px;
     }

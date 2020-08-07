@@ -1,22 +1,18 @@
 .sait-nav {
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
+  margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
     display: flex;
-    }
-    @media screen and (min-width:  1200px) {
-      display: flex;
-    }
+    margin-bottom: 0;
     &__item:not(:last-child){
-        margin-right: 50px;
-    } 
+      margin-right: 50px;
+  } 
+    }
   }
   .sait-nav__link {
     position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 14px;
     color:$primary-text-color;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -43,6 +39,11 @@
     &--current::after,
     &--current::after {
         display: block;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   } 
   

@@ -9,13 +9,10 @@
       &__logo {
         display: block;
         color: $white-color;
-        @media screen and (min-width: 480px) {
-          text-align: center; //mobail
+        text-align: center; //mobail
           margin-left: auto;//mobail
           margin-right: auto;//mobail
           margin-bottom: 20px;
-        }
-        
         @media screen and (min-width:  1200px) {
           margin-right: 62px;
           margin-bottom: 8px;

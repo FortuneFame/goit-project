@@ -21,6 +21,13 @@
         <nav class="navigation">
           <a href="./index.html" class="logo list"><span class="logo--color" lang="en">Web </span>Studio</a>
   
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
+            <svg class="" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__cross" href="./images/sprite.svg#close_icon"></use>
+              <use class="menu-button__menu" href="./images/sprite.svg#menu_icon"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
           <ul class="sait-nav list">
             <li class="sait-nav__item"><a href="./index.html" class="sait-nav__link">Студия</a></li>
             <li class="sait-nav__item">
@@ -28,8 +35,7 @@
             </li>
             <li class="sait-nav__item"><a href="" class="sait-nav__link">Контакты</a></li>
           </ul>
-        </nav>
-  
+          
         <ul class="auth-nav list">
           <li class="auth-nav__item auth-nav__item--position">
               <svg class="auth-nav__icon auth-nav__icon--size-email">
@@ -46,7 +52,9 @@
               </a>
           </li>
         </ul>
-      </div>
+       </div>
+      </nav>
+     </div>
     </header>
     <!--Уникальный контент-->
     <main>
@@ -338,5 +346,6 @@
         <p class="property">2020 &#x0007C; Developed by GoIT Students</p>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
