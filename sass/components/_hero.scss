@@ -1,7 +1,7 @@
 .hero {
     background-color: $text-color;
     background-image: $bgimg-gradient,
-    url(../images/BG/BGoffice-light.jpg);
+    url(../images/BG/Header_480.jpg);
     background-size: cover;
     background-position: center;
     margin-left: auto;
@@ -10,6 +10,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+
     @media screen and (min-width:  1200px) {
        max-width: 1600px;
        height: 600px;
@@ -50,5 +51,40 @@
         cursor: pointer;
     } 
 }
+  
+@media (min-resolution: 2dppx) {
+    .hero {
+        background-image: $bgimg-gradient,
+        url(../images/BG/Header_2x_480.jpg);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .hero {
+        background-image: $bgimg-gradient,
+        url(../images/BG/Header_768.jpg);
+    }
+    @media (min-resolution: 2dppx) {
+        .hero {
+            background-image: $bgimg-gradient,
+            url(../images/BG/Header_2x_768.jpg);
+        }
+    }
+}
+  
+@media screen and (min-width: 960px) {
+    .hero {
+        background-image: $bgimg-gradient,
+        url(../images/BG/Header_1200.jpg);
+    }
+    @media (min-resolution: 2dppx) {
+        .hero {
+            background-image: $bgimg-gradient,
+            url(../images/BG/Header_2x_1200.jpg);
+        }
+    }
+}
+
+
   
  
