@@ -535,7 +535,7 @@ img {
   margin-right: 8px;
 }
 
-.button {
+.head-button__label {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -553,24 +553,21 @@ img {
   margin-bottom: 15px;
   border-radius: 4px;
   border: none;
+  background-color: #f5f4fa;
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  .button {
+  .head-button__label {
     margin-bottom: 0;
   }
 }
 
-.button:hover, .button:focus {
+.head-button__label:hover, .head-button__label:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
-}
-
-.button--first {
-  background-color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
