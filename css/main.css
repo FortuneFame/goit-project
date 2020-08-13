@@ -1305,6 +1305,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-width: 370px;
+  min-height: 120px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
