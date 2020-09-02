@@ -1,11 +1,18 @@
   .main-nav {
     position: relative;
+    // z-index: 10;
   }
   .navigation {
     @include centeredFlex();
-    background-color: $bg-hero;    
+    background-color: $bg-hero;  
+    
   }
  
+  .button-hov:hover,
+  .button-hov:focus {
+    background-color: $bg-color-button;
+    transition: background-color $timing-function;
+  } 
   // .menu-button {
   //   display: inline-flex;
   //   align-items: center;

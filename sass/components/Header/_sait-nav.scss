@@ -40,10 +40,14 @@
 
   .sait-nav {
     margin-left: 110px;
+    
     @include centeredFlex();
     &-item:not(:last-child){
       margin-right: 35px;
     } 
+    &-item {
+      z-index: 2;
+    }
   }
   
   .sait-nav-link {

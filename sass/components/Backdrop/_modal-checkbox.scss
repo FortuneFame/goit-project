@@ -1,53 +1,53 @@
-.modal-checkbox {
-    @include centeredFlex();
-    margin-left: 40px;//mobail table
-    margin-right: 40px;//mobail table
-    margin-bottom: 30px;
+// .modal-checkbox {
+//     @include centeredFlex();
+//     margin-left: 40px;//mobail table
+//     margin-right: 40px;//mobail table
+//     margin-bottom: 30px;
     
-    @media screen and (min-width:  1200px) {
-    margin-left: 52px;
-    margin-right: 52px;
-      }
-    &__label {
-        display: inline-block;
-        color: $text-color;
-        letter-spacing: $main-let-spac;
-        font-size: 12px;//mobail table
+//     @media screen and (min-width:  1200px) {
+//     margin-left: 52px;
+//     margin-right: 52px;
+//       }
+//     &__label {
+//         display: inline-block;
+//         color: $text-color;
+//         letter-spacing: $main-let-spac;
+//         font-size: 12px;//mobail table
         
-        @media screen and (min-width:  1200px) {
-        font-size: 14px
-          }
+//         @media screen and (min-width:  1200px) {
+//         font-size: 14px
+//           }
          
-        &--link {
-        color: $accent-color;
-        letter-spacing: $main-let-spac;
-        }
-    }
-  }
-.modal-checkbox__input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;  
-    &--customm {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        margin-right: 8px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 2px;
-        transition: background-color $timing-function, 
-        border-color $timing-function;
-    }
-    &:checked + &--customm {
-        border-color: $accent-color;
-        background-color: $accent-color;
-        background-image: url(../images/SmallIcon/icon-check.svg);
-        background-size: contain;
-        background-origin: border-box;
-       }
-  }
+//         &--link {
+//         color: $accent-color;
+//         letter-spacing: $main-let-spac;
+//         }
+//     }
+//   }
+// .modal-checkbox__input {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;  
+//     &--customm {
+//         display: inline-block;
+//         width: 15px;
+//         height: 15px;
+//         margin-right: 8px;
+//         border: 1px solid rgba(33, 33, 33, 0.2);
+//         border-radius: 2px;
+//         transition: background-color $timing-function, 
+//         border-color $timing-function;
+//     }
+//     &:checked + &--customm {
+//         border-color: $accent-color;
+//         background-color: $accent-color;
+//         background-image: url(../images/SmallIcon/icon-check.svg);
+//         background-size: contain;
+//         background-origin: border-box;
+//        }
+//   }

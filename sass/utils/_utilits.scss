@@ -9,8 +9,8 @@
   }
   
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin: 0 auto;
 
     @media screen and (min-width: 480px) {
@@ -22,36 +22,24 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width:  1200px;
+      width:  1280px;
     }
   }
-  
-  // .section {
-  //   padding: 60px 0;
-
-  //   @media screen and (min-width:  1200px) {
-  //     padding: 94px 0;
-  //   }
-  // }
-  
-  // .no-padding {
-  //   padding-bottom: 0;
-  // }
-  
+    
   img {
     display: block;
     max-width: 100%;
     height: auto;
   }
   
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  // .visually-hidden {
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 1px;
+  //   margin: -1px;
+  //   border: 0;
+  //   padding: 0;
+  //   clip: rect(0 0 0 0);
+  //   overflow: hidden;
+  // }
   
