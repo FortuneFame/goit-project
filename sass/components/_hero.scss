@@ -84,7 +84,99 @@
 //         }
 //     }
 // }
+.hero {
+    background-image: url(../images/Rectangle.jpg);
+    
+       
+}
 
+.title-hero {
+    display: block;
+    width: 277px;
+    color: $white-color;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 115px;
+    padding-top: 64px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
 
-  
+.title-color {
+    color: $accent-color;
+}
+
+  .button-first {
+    display: inline-block;
+    border-radius: 22px;
+    border: none;
+    padding: 12px 37px;
+    color:$accent-color;
+    background-color:  $white-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    cursor: pointer;
+  }
  
+.button-second {
+    display: inline-block;
+    border-radius: 22px;
+    border: none;
+    padding: 12px 37px;
+    margin-left: 115px;
+    color:$white-color;
+    background-color:  $accent-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    cursor: pointer;
+}
+
+.paragraph {
+ display: flex; 
+ align-items: center;
+ margin-top: 56px;
+ margin-left: 115px;  
+}
+
+.text-paragraph {
+    width: 200px;
+    margin-left: 30px;
+}
+
+// .link-icon {
+// }
+
+.ellipse-img {
+    position: absolute;
+    top: 42px;
+    left: 46%;
+    z-index: 1;
+} 
+
+.ice-cream-img {
+    position: absolute;
+    top: 98px;
+    left: 54%;
+    z-index: 2;
+}
+
+.girl-img {
+    position: absolute;
+    top: 400px;
+    left: 72%;
+    z-index: 3;
+}
+
+.progression {
+    position: absolute;
+    top: 150px;
+    left: 90%;
+    z-index: 4;
+}
