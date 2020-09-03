@@ -26,7 +26,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
   }
@@ -38,8 +38,15 @@ img {
   height: auto;
 }
 
-.main-nav {
-  position: relative;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation {
@@ -83,6 +90,19 @@ img {
   z-index: 2;
 }
 
+@media screen and (max-width: 1280px) {
+  .sait-nav {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .sait-nav-link {
   position: relative;
   display: inline-block;
@@ -118,67 +138,152 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .button-buy {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.menu-button {
+  margin-left: 61px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    margin-left: 291px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .hero {
-  position: absolute;
-  background-image: url(../images/Rectangle.png);
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding-bottom: 41px;
+  position: relative;
+  background-image: url(../images/Mobile/Rectangle-mob.png);
+  padding-bottom: 167px;
+  z-index: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url(../images/Desktop/Rectangle.png);
+    padding-bottom: 40px;
+  }
 }
 
 .title-hero {
   display: block;
-  width: 277px;
+  width: 218px;
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 25px;
-  margin-left: 115px;
-  padding-top: 64px;
+  margin-left: 20px;
+  padding-top: 137px;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  z-index: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .title-hero {
+    width: 162px;
+    font-size: 22px;
+    line-height: 1.13;
+    margin-left: 34px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-hero {
+    width: 277px;
+    font-size: 38px;
+    line-height: 1.15;
+    margin-left: 115px;
+    padding-top: 84px;
+  }
 }
 
 .title-color {
   color: #D41443;
 }
 
-.button-first {
+.hero-button {
+  margin-left: 20px;
+  z-index: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button {
+    margin-left: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-button {
+    margin-left: 115px;
+  }
+}
+
+.button-first,
+.button-second {
   display: inline-block;
-  border-radius: 22px;
+  border-radius: 20px;
   border: none;
-  padding: 12px 37px;
-  margin-left: 15px;
-  color: #D41443;
-  background-color: #ffffff;
+  padding: 7px 14px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.31;
+  font-size: 8px;
+  line-height: 1.25;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
 }
 
-.button-second {
-  display: inline-block;
-  border-radius: 22px;
-  border: none;
-  padding: 12px 37px;
-  margin-left: 115px;
+@media screen and (min-width: 1280px) {
+  .button-first,
+  .button-second {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 11px 23px;
+  }
+}
+
+.button-first {
   color: #ffffff;
   background-color: #D41443;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.31;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
+}
+
+.button-second {
+  color: #D41443;
+  background-color: #ffffff;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+  .button-second {
+    margin-left: 15px;
+  }
 }
 
 .paragraph {
@@ -190,6 +295,20 @@ img {
           align-items: center;
   margin-top: 56px;
   margin-left: 72px;
+}
+
+@media screen and (max-width: 767px) {
+  .paragraph {
+    width: 767px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .text-paragraph {
@@ -206,23 +325,59 @@ img {
 
 .ellipse-img {
   position: absolute;
-  top: -50px;
-  left: 40%;
-  z-index: 1;
+  top: 20px;
+  left: 10%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .ellipse-img {
+    top: -50px;
+    left: 40%;
+    z-index: 1;
+  }
 }
 
 .ice-cream-img {
   position: absolute;
-  top: -6px;
-  left: 48%;
-  z-index: 2;
+  top: 30px;
+  left: 25%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-cream-img {
+    top: -13px;
+    left: 48%;
+    z-index: 2;
+  }
 }
 
 .girl-img {
   position: absolute;
-  top: 319px;
+  top: 312px;
   left: 71%;
   z-index: 3;
+}
+
+@media screen and (max-width: 767px) {
+  .girl-img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .girl-img {
+    top: 312px;
+    left: 71%;
+  }
 }
 
 .progression {
@@ -230,6 +385,26 @@ img {
   top: 40px;
   left: 89%;
   z-index: 4;
+}
+
+@media screen and (max-width: 767px) {
+  .progression {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .progression {
+    top: 40px;
+    left: 89%;
+  }
 }
 
 .progression-num {

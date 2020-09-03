@@ -85,71 +85,114 @@
 //     }
 // }
 .hero {
-    position: absolute;
-    background-image: url(../images/Rectangle.png);
-    top: 50%;
-    left: 50%;
-    transform: $translate-center;
-    padding-bottom: 41px;
+    position: relative;
+    background-image: url(../images/Mobile/Rectangle-mob.png);
+    padding-bottom: 167px;
+    z-index: 0;
+      @media screen and (min-width: 768px) {
+        
+      }
+      @media screen and (min-width: 1280px) {
+        background-image: url(../images/Desktop/Rectangle.png);
+        padding-bottom: 40px;
+      }
 }  
-
-
 
 .title-hero {
     display: block;
-    width: 277px;
+    width: 218px;
     color: $white-color;
     margin-top: 0;
     margin-bottom: 25px;
-    margin-left: 115px;
-    padding-top: 64px;
+    margin-left: 20px;
+    padding-top: 137px;
     font-weight: 400;
-    font-size: 38px;
+    font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    z-index: 3;
+    @media screen and (min-width: 768px) {
+        width: 162px;
+        font-size: 22px;
+        line-height: 1.13;
+        margin-left: 34px;
+        padding-top: 15px;
+      }
+  
+      @media screen and (min-width: 1280px) {
+        width: 277px;
+        font-size: 38px;
+        line-height: 1.15;
+        margin-left: 115px;
+        padding-top: 84px;
+      }
 }
 
 .title-color {
     color: $accent-color;
 }
 
-
-  .button-first {
-    display: inline-block;
-    border-radius: 22px;
-    border: none;
-    padding: 12px 37px;
-    margin-left: 15px;
-    color:$accent-color;
-    background-color:  $white-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.31;
-    align-items: center;
-    cursor: pointer;
-  }
- 
-.button-second {
-    display: inline-block;
-    border-radius: 22px;
-    border: none;
-    padding: 12px 37px;
-    margin-left: 115px;
-    color:$white-color;
-    background-color:  $accent-color;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.31;
-    align-items: center;
-    cursor: pointer;
+.hero-button {
+    margin-left: 20px;
+    z-index: 3;
+    @media screen and (min-width: 768px) {
+        margin-left: 34px;
+      }
+    @media screen and (min-width: 1280px) {
+         margin-left: 115px;
+      }
 }
+
+  .button-first,
+  .button-second {
+    display: inline-block;
+    border-radius: 20px;
+    border: none;
+    padding: 7px 14px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    align-items: center;
+    cursor: pointer;
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.28;
+        padding: 11px 23px;
+      }
+  }
+  
+  
+  .button-first {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+
+  .button-second {
+    color: $accent-color;
+    background-color: $white-color;
+    margin-left: 8px;
+    @media screen and (min-width: 1280px) {
+       margin-left: 15px;
+       }
+  }
 
 .paragraph {
  display: flex; 
  align-items: center;
  margin-top: 56px;
- margin-left: 72px;  
+ margin-left: 72px;
+ @media screen and (max-width: 767px) {
+    width: 767px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }  
 }
 
 .text-paragraph {
@@ -164,35 +207,78 @@
     margin-left: 30px;
     
 }
-// .link-icon {
-// }
 
 .ellipse-img {
     position: absolute;
-    top: -50px;
-    left: 40%;
-    z-index: 1;
+    top: 20px;
+    left: 10%;
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+        
+      }
+    @media screen and (min-width: 1280px) {
+        top: -50px;
+        left: 40%;
+        z-index: 1;
+      }
 } 
 
 .ice-cream-img {
     position: absolute;
-    top: -6px;
-    left: 48%;
-    z-index: 2;
+    top: 30px;
+    left: 25%;
+    z-index: -1;
+    @media screen and (min-width: 768px) {
+        
+      }
+    @media screen and (min-width: 1280px) {
+        top: -13px;
+        left: 48%;
+        z-index: 2;
+      }
 }
 
 .girl-img {
     position: absolute;
-    top: 319px;
+    top: 312px;
     left: 71%;
     z-index: 3;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+    @media screen and (min-width: 1280px) {
+        top: 312px;
+        left: 71%;
+      }
 }
+
 
 .progression {
     position: absolute;
     top: 40px;
     left: 89%;
     z-index: 4;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+    @media screen and (min-width: 1280px) {
+        top: 40px;
+        left: 89%;
+      }
 }
 
 

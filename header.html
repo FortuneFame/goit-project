@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
-<body class="page">
+<body>
   <!--Шапка-->
   <header>
     <div class="main-nav container">
       <nav class="navigation">
         <a href="./index.html"><img srcset="" 
-     src="./images/logo.png" 
+     src="./images/Desktop/logo.png" 
      alt="Logo" 
      width="199" 
      height="50" /></a>
@@ -50,26 +50,123 @@
     <!--Секция №1 Герой-->
     <section class="hero container">
       <h1 class="title-hero">ice cream made with <span class="title-color">passion</span></h1>
-        <a href="" class="button-second">Products</a>
-        <a href="" class="button-first button-hov">How it’s made?</a>
+        <div class="hero-button">
+          <a href="" class="button-first">Products</a>
+          <a href="" class="button-second button-hov">How it’s made?</a>
+        </div>
       <div class="paragraph">
-        <img srcset="" src="./images/slider-pic5.png" alt="Milk" width="188" height="191" />
-       <div class="position">
+
+        <picture>
+          <source
+            srcset="./images/Tablet/slider-pic5-tab.png 1x, 
+            ./images/Tablet/slider-pic5-tab_2x(768).png 2x"
+            alt="Milk" 
+            width="124"
+            height="126"
+            media="(max-width: 767px)"
+          > 
+          <source
+            srcset="./images/Desktop/slider-pic5.png 1x, 
+            ./images/Desktop/slider-pic5_2x.png 2x"
+            alt="Milk" 
+            width="188"
+            height="191" 
+            media="(min-width: 1200px)" 
+          > 
+          <img src="./images/Desktop/slider-pic5.png" alt="Milk" />
+        </picture>
+               
+        <div class="position">
         <p class="text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <a href="" class="link-icon"><img srcset="" src="./images/Ellipse-small.png" alt="Arrow" width="26" height="26" /></a>
+        <a href="" class="link-icon"><img srcset="" src="./images/Desktop/Ellipse-small.png" alt="Arrow" width="26" height="26" /></a>
        </div>
-      </div>  
-      <img class="ellipse-img" srcset="" src="./images/Ellipse.png" alt="Ellipse" width="538" height="538" />
-      <img class="ice-cream-img" srcset="" src="./images/slider-pic71.png" alt="Ice-cream" width="236" height="557" />
-      <img class="girl-img" srcset="" src="./images/slider-pic4.png" alt="Girl" width="293" height="232" />
-     
+      </div> 
+      
+      <picture>
+        <source
+          srcset="./images/Mobile/Ellipse-mob.png 1x, 
+          ./images/Mobile/Ellipse-mob_2x(480).png 2x"
+          alt="Ellipse" 
+          width="346"
+          height="344"
+          media="(max-width: 767px)"
+        > 
+        <source
+          srcset="./images/Tablet/Ellipse-tab.png 1x, 
+          ./images/Tablet/Ellipse-tab_2x(768).png 2x"
+          alt="Ellipse" 
+          width="324"
+          height="322"
+          media="(max-width: 1199px)"
+        > 
+        <source
+          srcset="./images/Desktop/Ellipse.png 1x, 
+          ./images/Desktop/Ellipse_2x.png 2x"
+          alt="Ellipse" 
+          width="538"
+          height="538" 
+          media="(min-width: 1200px)" 
+        > 
+        <img class="ellipse-img" src="./images/Desktop/Ellipse.png" alt="Ellipse" />
+      </picture>
+            
+      <picture>
+        <source
+          srcset="./images/Mobile/slider-pic7-mob.png 1x, 
+          ./images/Mobile/slider-pic7-mob_2x(480).png 2x"
+          alt="Ice-cream" 
+          width="171"
+          height="410"
+          media="(max-width: 767px)"
+        > 
+        <source
+          srcset="./images/Tablet/slider-pic7-tab.png 1x, 
+          ./images/Tablet/slider-pic7-tab_2x(768).png 2x"
+          alt="Ice-cream" 
+          width="143"
+          height="336"
+          media="(max-width: 1199px)"
+        > 
+        <source
+          srcset="./images/Desktop/slider-pic71.png 1x, 
+          ./images/Desktop/slider-pic71_2x.png2x"
+          alt="Ice-cream" 
+          width="236"
+          height="557" 
+          media="(min-width: 1200px)" 
+        > 
+
+        <img class="ice-cream-img" src="./images/Desktop/slider-pic71.png" alt="Ice-cream" />
+      </picture>
+            
+      <picture>
+        <source
+          srcset="./images/Tablet/slider-pic4-tab.png 1x, 
+          ./images/Tablet/slider-pic4-tab_2x(768).png 2x"
+          alt="Girl" 
+          width="354"
+          height="260"
+          media="(max-width: 767px)"
+        > 
+        <source
+          srcset="./images/Desktop/slider-pic4.png 1x, 
+          ./images/Desktop/slider-pic4_2x.png 2x"
+          alt="Girl" 
+          width="293"
+          height="232" 
+          media="(min-width: 1200px)" 
+        > 
+
+        <img class="girl-img" src="./images/Desktop/slider-pic4.png" alt="Girl" />
+      </picture>
+           
       <div class="progression">
       <p class="progression-num" >16</p>
       <p class="progression-text">cafes</p>
-      <img class="ellipse-up" srcset="" src="./images/Ellipse-small.png" alt="Ellipse" width="30" height="30" />
+      <img class="ellipse-up" srcset="" src="./images/Desktop/Ellipse-small.png" alt="Ellipse" width="30" height="30" />
       <p class="progression-num" >23</p>
       <p class="progression-text">food trucks</p>
-      <img class="ellipse-down" srcset="" src="./images/Ellipse-small.png" alt="Ellipse" width="30" height="30" />
+      <img class="ellipse-down" srcset="" src="./images/Desktop/Ellipse-small.png" alt="Ellipse" width="30" height="30" />
      </div>
       
       
