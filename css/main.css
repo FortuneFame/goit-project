@@ -184,7 +184,7 @@ img {
 @media screen and (min-width: 1280px) {
   .hero {
     background-image: url(../images/Desktop/Rectangle.png);
-    padding-bottom: 40px;
+    padding-bottom: 21px;
   }
 }
 
@@ -375,7 +375,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .girl-img {
-    top: 312px;
+    top: 313px;
     left: 71%;
   }
 }
