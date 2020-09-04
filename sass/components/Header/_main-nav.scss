@@ -8,7 +8,12 @@
     @include centeredFlex();
     background-color: $bg-hero; 
     padding-top: 32px;
-    @media screen and (min-width: 1280px) {
+    @media screen and (max-width: 767px) {
+      justify-content:space-between;
+      padding-left:20px;
+      padding-right:20px
+    }
+      @media screen and (min-width: 1280px) {
       padding-top: 0;
     } 
   }

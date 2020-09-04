@@ -63,6 +63,16 @@ img {
   padding-top: 32px;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .navigation {
     padding-top: 0;
@@ -371,7 +381,7 @@ img {
 .ellipse-img {
   position: absolute;
   top: 20px;
-  left: 10%;
+  right: 0;
   z-index: -1;
 }
 
@@ -394,13 +404,13 @@ img {
 .ice-cream-img {
   position: absolute;
   top: 30px;
-  left: 25%;
+  right: 6%;
   z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
   .ice-cream-img {
-    top: -15px;
+    top: -16px;
     left: 53%;
     z-index: -1;
   }
@@ -436,7 +446,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .girl-img {
-    top: 188px;
+    top: 187px;
     left: 76%;
   }
 }

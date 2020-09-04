@@ -139,7 +139,7 @@
 .ellipse-img {
     position: absolute;
     top: 20px;
-    left: 10%;
+    right: 0;
     z-index: -1;
     @media screen and (min-width: 768px) {
       top: -46px;
@@ -156,10 +156,10 @@
 .ice-cream-img {
     position: absolute;
     top: 30px;
-    left: 25%;
+    right: 6%;
     z-index: -1;
     @media screen and (min-width: 768px) {
-      top: -15px;
+      top: -16px;
       left: 53%;
       z-index: -1;
       }
@@ -186,7 +186,7 @@
         overflow: hidden;
       }
       @media screen and (min-width: 768px) {
-        top: 188px;
+        top: 187px;
         left: 76%;
       }
     @media screen and (min-width: 1280px) {
