@@ -60,6 +60,13 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #FFB8CA;
+  padding-top: 32px;
+}
+
+@media screen and (min-width: 1280px) {
+  .navigation {
+    padding-top: 0;
+  }
 }
 
 .button-hov:hover,
@@ -90,7 +97,7 @@ img {
   z-index: 2;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .sait-nav {
     position: absolute;
     width: 1px;
@@ -126,7 +133,7 @@ img {
   border-radius: 22px;
   border: none;
   padding: 12px 37px;
-  margin-left: 110px;
+  margin-left: 30px;
   color: #D41443;
   background-color: #ffffff;
   font-weight: 400;
@@ -138,7 +145,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .button-buy {
     position: absolute;
     width: 1px;
@@ -151,8 +158,15 @@ img {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .button-buy {
+    margin-left: 110px;
+  }
+}
+
 .menu-button {
   margin-left: 61px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,6 +193,12 @@ img {
   background-image: url(../images/Mobile/Rectangle-mob.png);
   padding-bottom: 167px;
   z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 38px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -293,13 +313,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 56px;
-  margin-left: 72px;
+  margin-top: 20px;
+  margin-left: 34px;
 }
 
 @media screen and (max-width: 767px) {
   .paragraph {
-    width: 767px;
     position: absolute;
     width: 1px;
     height: 1px;
@@ -311,16 +330,42 @@ img {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .paragraph {
+    margin-top: 56px;
+    margin-left: 72px;
+  }
+}
+
 .text-paragraph {
-  width: 200px;
+  width: 114px;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+  .text-paragraph {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.42;
+    margin-bottom: 20px;
+  }
 }
 
 .position {
   display: block;
-  margin-left: 30px;
+  margin-left: 0;
+  margin-top: 46px;
+}
+
+@media screen and (min-width: 1280px) {
+  .position {
+    margin-left: 30px;
+    margin-top: 0;
+  }
 }
 
 .ellipse-img {
@@ -328,6 +373,14 @@ img {
   top: 20px;
   left: 10%;
   z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .ellipse-img {
+    top: -46px;
+    left: 42%;
+    z-index: -1;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -343,6 +396,14 @@ img {
   top: 30px;
   left: 25%;
   z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .ice-cream-img {
+    top: -15px;
+    left: 53%;
+    z-index: -1;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -370,6 +431,13 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .girl-img {
+    top: 188px;
+    left: 76%;
   }
 }
 
@@ -411,13 +479,21 @@ img {
   position: relative;
   color: #D41443;
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   font-style: normal;
   font-weight: 400;
-  font-size: 46px;
-  line-height: 1.15;
+  font-size: 28px;
+  line-height: 1.14;
   letter-spacing: 0.04em;
   text-align: right;
+}
+
+@media screen and (min-width: 1280px) {
+  .progression-num {
+    margin-bottom: 2px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 
 .progression-text {
@@ -427,22 +503,45 @@ img {
   padding-bottom: 15px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28;
+  font-size: 8px;
+  line-height: 1.25;
   text-align: right;
+}
+
+@media screen and (min-width: 1280px) {
+  .progression-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .ellipse-up {
   position: absolute;
-  top: 1px;
-  left: 55px;
+  top: 0px;
+  left: 34px;
   z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .ellipse-up {
+    top: -3px;
+    left: 55px;
+    z-index: -1;
+  }
 }
 
 .ellipse-down {
   position: absolute;
-  top: 85px;
-  left: 55px;
+  top: 56px;
+  left: 33px;
   z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .ellipse-down {
+    top: 85px;
+    left: 55px;
+    z-index: -1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

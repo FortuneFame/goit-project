@@ -1,10 +1,16 @@
   // .main-nav {
-  //   position: relative;
-  //   // z-index: 10;
+  //   padding-top: 40px;
+  //   @media screen and (min-width: 1280px) {
+  //     padding-top: 0;
+  //   }
   // }
   .navigation {
     @include centeredFlex();
-    background-color: $bg-hero;  
+    background-color: $bg-hero; 
+    padding-top: 32px;
+    @media screen and (min-width: 1280px) {
+      padding-top: 0;
+    } 
   }
  
   .button-hov:hover,
