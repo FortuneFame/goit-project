@@ -32,16 +32,6 @@
       color: $accent-color;
       transition: color $timing-function;
     }
-    // @media screen and (max-width: 1280px) {
-    //   position: absolute;
-    //   width: 1px;
-    //   height: 1px;
-    //   margin: -1px;
-    //   border: 0;
-    //   padding: 0;
-    //   clip: rect(0 0 0 0);
-    //   overflow: hidden;
-    // }
   }
 
   .button-buy {
@@ -74,20 +64,4 @@
     }
   }
 
-  .menu-button {
-   margin-left: 61px;
-   z-index: 1;
-   @media screen and (min-width: 768px) {
-    margin-left: 291px;
-  }
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  }
+  
