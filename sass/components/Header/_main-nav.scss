@@ -1,76 +1,108 @@
-  .navigation {
-    position: relative;
-    @include centeredFlex();
-    background-color: $bg-hero; 
-    padding-top: 32px;
-    @media screen and (max-width: 1279px) {
-      justify-content:space-between;
-      padding-left:20px;
-      padding-right:20px
-    }
-      @media screen and (min-width: 1280px) {
-      padding-top: 0;
-    } 
+header {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.navigation {
+  @include centeredFlex();
+  padding-top: 32px;
+  @media screen and (max-width: 1279px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
- 
-  .button-hov:hover,
-  .button-hov:focus {
-    background-color: $bg-color-button;
-    transition: background-color $timing-function;
-  } 
-
-
-  .menu-button {
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto;
-    padding: 10px 0;
-    border: none;
-    background-color: tomato;
-    z-index: 1;
-    &-cross {
-      display: none;
-    }
-   @media screen and (min-width: 1280px) {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     border: 0;
-     padding: 0;
-     clip: rect(0 0 0 0);
-     overflow: hidden;
-   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 0;
+    padding-left: 34px;
+    padding-right: 34px;
   }
-  .menu-button--is-open .menu-button-cross{
+}
+
+.button-hov:hover,
+.button-hov:focus {
+  background-color: $bg-color-button;
+  transition: background-color $timing-function;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  height: 20px;
+  background-color: transparent;
+  align-items: center;
+  margin-left: auto;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  &-cross {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.menu-button--is-open .menu-button-cross {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+}
+.menu-button--is-open .menu-button-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  z-index: 1;
+  &--is-open {
     display: block;
   }
-  .menu-button--is-open .menu-button-menu{
-    display: none;
+  @media screen and (max-width: 1279px) {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    width: 254px;
+    height: 500px;
+    padding-top: 123px;
+    text-align: center;
+    overflow: hidden;
+    background-color: $beakdrop-color;
   }
-
-  .menu-container {
-    display: none;
-    z-index: 100;
-    &--is-open {
-      display: block;
-    }
-    @media screen and (max-width: 1279px) {
-      position: absolute;
-      top: 82px;
-      right: 209px;
-      width: 250px;
-      height: 320px;
-      padding: 20px;
-      text-align: center;
-      overflow: hidden;
-      background-color: $beakdrop-color;
-    }
-    @media screen and (max-width: 767px) {
-      right: 20px;
-      height: 440px;
-    }
-    @media screen and (min-width: 1280px) {
-     display: block;
+  @media screen and (max-width: 767px) {
+    top: 0;
+    right: 0;
+    right: 20px;
+    width: 250px;
+    height: 502px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-button--is-open {
+    &.menu-button {
+      transform: translate(-28px, -23px);
     }
   }
+}
+@media screen and (max-width: 1279px) {
+  .menu-button--is-open {
+    &.menu-button {
+      transform: translate(-18px, -23px);
+    }
+  }
+}

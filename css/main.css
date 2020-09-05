@@ -49,8 +49,14 @@ img {
   overflow: hidden;
 }
 
+header {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
 .navigation {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,15 +66,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #FFB8CA;
   padding-top: 32px;
 }
 
 @media screen and (max-width: 1279px) {
   .navigation {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -77,6 +79,8 @@ img {
 @media screen and (min-width: 1280px) {
   .navigation {
     padding-top: 0;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 }
 
@@ -88,16 +92,23 @@ img {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  outline: none;
+  height: 20px;
+  background-color: transparent;
+  align-items: center;
   margin-left: auto;
   padding: 10px 0;
   border: none;
-  background-color: tomato;
+  cursor: pointer;
   z-index: 1;
 }
 
@@ -120,6 +131,9 @@ img {
 
 .menu-button--is-open .menu-button-cross {
   display: block;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .menu-button--is-open .menu-button-menu {
@@ -128,7 +142,7 @@ img {
 
 .menu-container {
   display: none;
-  z-index: 100;
+  z-index: 1;
 }
 
 .menu-container--is-open {
@@ -138,11 +152,11 @@ img {
 @media screen and (max-width: 1279px) {
   .menu-container {
     position: absolute;
-    top: 82px;
-    right: 209px;
-    width: 250px;
-    height: 320px;
-    padding: 20px;
+    top: 0;
+    right: 25%;
+    width: 254px;
+    height: 500px;
+    padding-top: 123px;
     text-align: center;
     overflow: hidden;
     background-color: #E17992;
@@ -151,19 +165,43 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    top: 0;
+    right: 0;
     right: 20px;
-    height: 440px;
+    width: 250px;
+    height: 502px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .menu-container {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button--is-open.menu-button {
+    -webkit-transform: translate(-28px, -23px);
+            transform: translate(-28px, -23px);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .menu-button--is-open.menu-button {
+    -webkit-transform: translate(-18px, -23px);
+            transform: translate(-18px, -23px);
   }
 }
 
 .sait-nav {
-  margin-left: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,32 +213,28 @@ img {
           justify-content: center;
 }
 
-.sait-nav-item:not(:last-child) {
-  margin-right: 35px;
-}
-
 .sait-nav-item {
   z-index: 2;
 }
 
 @media screen and (max-width: 1279px) {
   .sait-nav {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+  .sait-nav {
+    margin-left: 110px;
+  }
+  .sait-nav-item:not(:last-child) {
+    margin-right: 35px;
   }
 }
 
 .sait-nav-link {
   position: relative;
   display: inline-block;
-  padding-top: 40px;
-  padding-bottom: 40px;
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -212,10 +246,29 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1280px) {
+  .sait-nav-link {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.buy {
+  margin-right: 13.33px;
+}
+
 .button-buy {
   width: 159px;
   height: 44px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   border-radius: 22px;
   border: none;
   padding: 12px 37px;
@@ -231,43 +284,65 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  .button-buy {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .button-buy {
     margin-left: 110px;
   }
 }
 
+@media screen and (max-width: 1279px) {
+  .sait-nav-link {
+    padding-left: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 42px;
+    border-top: 1px solid #e18298;
+  }
+  .sait-nav-link:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-buy {
+    display: none;
+  }
+  .menu-button--is-open .button-buy {
+    display: block;
+    position: absolute;
+    z-index: 4;
+  }
+}
+
 .hero {
   position: relative;
-  background-image: url(../images/Mobile/Rectangle-mob.png);
-  padding-bottom: 167px;
+  background-color: #ffb8ca;
   z-index: 0;
+  height: 502px;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-bottom: 38px;
+    height: 399px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url(../images/Desktop/Rectangle.png);
-    padding-bottom: 21px;
+    background-color: #ffb8ca;
+    height: 665px;
   }
+}
+
+.logo-company {
+  z-index: 2;
 }
 
 .title-hero {
@@ -277,7 +352,7 @@ img {
   margin-top: 0;
   margin-bottom: 25px;
   margin-left: 20px;
-  padding-top: 137px;
+  padding-top: 193px;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -292,7 +367,7 @@ img {
     font-size: 22px;
     line-height: 1.13;
     margin-left: 34px;
-    padding-top: 15px;
+    padding-top: 102px;
   }
 }
 
@@ -302,7 +377,7 @@ img {
     font-size: 38px;
     line-height: 1.15;
     margin-left: 115px;
-    padding-top: 84px;
+    padding-top: 171px;
   }
 }
 
@@ -312,7 +387,7 @@ img {
 
 .hero-button {
   margin-left: 20px;
-  z-index: 3;
+  z-index: 5;
 }
 
 @media screen and (min-width: 768px) {
@@ -419,27 +494,18 @@ img {
 
 .position {
   display: block;
-  margin-left: 0;
-  margin-top: 46px;
-}
-
-@media screen and (min-width: 1280px) {
-  .position {
-    margin-left: 30px;
-    margin-top: 0;
-  }
 }
 
 .ellipse-img {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 0;
   z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
   .ellipse-img {
-    top: -46px;
+    bottom: 46px;
     left: 42%;
     z-index: -1;
   }
@@ -447,7 +513,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .ellipse-img {
-    top: -50px;
+    bottom: 75px;
     left: 40%;
     z-index: 1;
   }
@@ -455,14 +521,14 @@ img {
 
 .ice-cream-img {
   position: absolute;
-  top: 30px;
+  bottom: 0;
   right: 6%;
   z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
   .ice-cream-img {
-    top: -16px;
+    bottom: 0;
     left: 53%;
     z-index: -1;
   }
@@ -470,7 +536,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .ice-cream-img {
-    top: -13px;
+    bottom: 0;
     left: 48%;
     z-index: 2;
   }
@@ -478,7 +544,7 @@ img {
 
 .girl-img {
   position: absolute;
-  top: 312px;
+  bottom: 0;
   left: 71%;
   z-index: 3;
 }
@@ -498,22 +564,22 @@ img {
 
 @media screen and (min-width: 768px) {
   .girl-img {
-    top: 187px;
+    bottom: 0;
     left: 76%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .girl-img {
-    top: 313px;
+    bottom: 0;
     left: 71%;
   }
 }
 
 .progression {
   position: absolute;
-  top: 40px;
-  left: 89%;
+  top: 94px;
+  right: 34px;
   z-index: 4;
 }
 
@@ -532,8 +598,8 @@ img {
 
 @media screen and (min-width: 1280px) {
   .progression {
-    top: 40px;
-    left: 89%;
+    right: 97px;
+    top: 156px;
   }
 }
 
@@ -605,5 +671,9 @@ img {
     left: 55px;
     z-index: -1;
   }
+}
+
+.arrow-right {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */

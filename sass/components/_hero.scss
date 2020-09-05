@@ -1,102 +1,106 @@
 .hero {
-    position: relative;
-    background-image: url(../images/Mobile/Rectangle-mob.png);
-    padding-bottom: 167px;
-    z-index: 0;
-      @media screen and (min-width: 768px) {
-        padding-bottom: 38px;
-      }
-      @media screen and (min-width: 1280px) {
-        background-image: url(../images/Desktop/Rectangle.png);
-        padding-bottom: 21px;
-      }
-}  
+  position: relative;
+  background-color: #ffb8ca;
+
+  z-index: 0;
+  height: 502px;
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-color: #ffb8ca;
+
+    height: 665px;
+  }
+}
+.logo-company {
+  z-index: 2;
+}
 
 .title-hero {
-    display: block;
-    width: 218px;
-    color: $white-color;
-    margin-top: 0;
-    margin-bottom: 25px;
-    margin-left: 20px;
-    padding-top: 137px;
-    font-weight: 400;
-    font-size: 26px;
+  display: block;
+  width: 218px;
+  color: $white-color;
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  padding-top: 193px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  z-index: 3;
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    font-size: 22px;
+    line-height: 1.13;
+    margin-left: 34px;
+    padding-top: 102px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    font-size: 38px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    z-index: 3;
-    @media screen and (min-width: 768px) {
-        width: 162px;
-        font-size: 22px;
-        line-height: 1.13;
-        margin-left: 34px;
-        padding-top: 15px;
-      }
-  
-      @media screen and (min-width: 1280px) {
-        width: 277px;
-        font-size: 38px;
-        line-height: 1.15;
-        margin-left: 115px;
-        padding-top: 84px;
-      }
+    margin-left: 115px;
+    padding-top: 171px;
+  }
 }
 
 .title-color {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .hero-button {
-    margin-left: 20px;
-    z-index: 3;
-    @media screen and (min-width: 768px) {
-        margin-left: 34px;
-      }
-    @media screen and (min-width: 1280px) {
-         margin-left: 115px;
-      }
+  margin-left: 20px;
+  z-index: 5;
+  @media screen and (min-width: 768px) {
+    margin-left: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 115px;
+  }
 }
 
-  .button-first,
-  .button-second {
-    display: inline-block;
-    border-radius: 20px;
-    border: none;
-    padding: 7px 14px;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    align-items: center;
-    cursor: pointer;
-    @media screen and (min-width: 1280px) {
-        font-size: 14px;
-        line-height: 1.28;
-        padding: 11px 23px;
-      }
+.button-first,
+.button-second {
+  display: inline-block;
+  border-radius: 20px;
+  border: none;
+  padding: 7px 14px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  cursor: pointer;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 11px 23px;
   }
-  
-  
-  .button-first {
-    color: $white-color;
-    background-color: $accent-color;
-  }
+}
 
-  .button-second {
-    color: $accent-color;
-    background-color: $white-color;
-    margin-left: 8px;
-    @media screen and (min-width: 1280px) {
-       margin-left: 15px;
-       }
+.button-first {
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.button-second {
+  color: $accent-color;
+  background-color: $white-color;
+  margin-left: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 15px;
   }
+}
 
 .paragraph {
- display: flex; 
- align-items: center;
- margin-top: 20px;
- margin-left: 34px;
- @media screen and (max-width: 767px) {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 34px;
+  @media screen and (max-width: 767px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -105,7 +109,7 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }  
+  }
   @media screen and (min-width: 1280px) {
     margin-top: 56px;
     margin-left: 72px;
@@ -113,166 +117,165 @@
 }
 
 .text-paragraph {
-    width: 114px;
-    color: $white-color;
-    margin-top: 0;
-    margin-bottom: 7px;
-    font-size: 8px;
-    line-height: 1.5;
-    @media screen and (min-width: 1280px) {
-      width: 200px;
-      font-size: 14px;
-      line-height: 1.42;
-      margin-bottom: 20px;
-    }
+  width: 114px;
+  color: $white-color;
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-size: 8px;
+  line-height: 1.5;
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.42;
+    margin-bottom: 20px;
+  }
 }
 
 .position {
-    display: block;
-    margin-left: 0;
-    margin-top: 46px;
-    @media screen and (min-width: 1280px) {
-      margin-left: 30px;
-      margin-top: 0;    }
+  display: block;
+
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .ellipse-img {
-    position: absolute;
-    top: 20px;
-    right: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: -1;
+  @media screen and (min-width: 768px) {
+    bottom: 46px;
+    left: 42%;
     z-index: -1;
-    @media screen and (min-width: 768px) {
-      top: -46px;
-      left: 42%;
-      z-index: -1;
-      }
-    @media screen and (min-width: 1280px) {
-        top: -50px;
-        left: 40%;
-        z-index: 1;
-      }
-} 
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 75px;
+    left: 40%;
+    z-index: 1;
+  }
+}
 
 .ice-cream-img {
-    position: absolute;
-    top: 30px;
-    right: 6%;
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  z-index: -1;
+  @media screen and (min-width: 768px) {
+    bottom: 0;
+    left: 53%;
     z-index: -1;
-    @media screen and (min-width: 768px) {
-      top: -16px;
-      left: 53%;
-      z-index: -1;
-      }
-    @media screen and (min-width: 1280px) {
-        top: -13px;
-        left: 48%;
-        z-index: 2;
-      }
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 0;
+    left: 48%;
+    z-index: 2;
+  }
 }
 
 .girl-img {
+  position: absolute;
+  bottom: 0;
+  left: 71%;
+  z-index: 3;
+  @media screen and (max-width: 767px) {
     position: absolute;
-    top: 312px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 0;
+    left: 76%;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 0;
     left: 71%;
-    z-index: 3;
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }
-      @media screen and (min-width: 768px) {
-        top: 187px;
-        left: 76%;
-      }
-    @media screen and (min-width: 1280px) {
-        top: 313px;
-        left: 71%;
-      }
+  }
 }
-
 
 .progression {
+  position: absolute;
+  top: 94px;
+  right: 34px;
+  z-index: 4;
+  @media screen and (max-width: 767px) {
     position: absolute;
-    top: 40px;
-    left: 89%;
-    z-index: 4;
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }
-    @media screen and (min-width: 1280px) {
-        top: 40px;
-        left: 89%;
-      }
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 97px;
+    top: 156px;
+  }
 }
 
-
 .progression-num {
-    position: relative;
-    color: $accent-color;
-    // font-family: Titan One;
-    margin-top: 0;
-    margin-bottom: 0px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-align: right;
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 2px;
-      font-size: 46px;
-      line-height: 1.15;
-    }
+  position: relative;
+  color: $accent-color;
+  // font-family: Titan One;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-align: right;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 2px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 
 .progression-text {
-    color: $white-color;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 15px;
-    // font-family: DM Sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    @media screen and (min-width: 1280px) {
-      font-size: 14px;
-      line-height: 1.28;
-    }
+  color: $white-color;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 15px;
+  // font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
   }
+}
 
 .ellipse-up {
-    position: absolute;
-    top: 0px;
-    left: 34px;
+  position: absolute;
+  top: 0px;
+  left: 34px;
+  z-index: -1;
+  @media screen and (min-width: 1280px) {
+    top: -3px;
+    left: 55px;
     z-index: -1;
-    @media screen and (min-width: 1280px) {
-      top: -3px;
-      left: 55px;
-      z-index: -1;
-    }
+  }
 }
 .ellipse-down {
-    position: absolute;
-    top: 56px;
-    left: 33px;
+  position: absolute;
+  top: 56px;
+  left: 33px;
+  z-index: -1;
+  @media screen and (min-width: 1280px) {
+    top: 85px;
+    left: 55px;
     z-index: -1;
-    @media screen and (min-width: 1280px) {
-      top: 85px;
-      left: 55px;
-      z-index: -1;
-    }
+  }
+}
+.arrow-right {
+  border-radius: 50%;
 }
