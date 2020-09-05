@@ -36,7 +36,7 @@ header {
   padding: 10px 0;
   border: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   &-cross {
     display: none;
   }
@@ -68,13 +68,14 @@ header {
   &--is-open {
     display: block;
   }
+
   @media screen and (max-width: 1279px) {
     position: absolute;
     top: 0;
     right: 25%;
     width: 254px;
     height: 500px;
-    padding-top: 123px;
+    padding-top: 60px;
     text-align: center;
     overflow: hidden;
     background-color: $beakdrop-color;
@@ -92,17 +93,17 @@ header {
     align-items: center;
   }
 }
-@media screen and (max-width: 767px) {
-  .menu-button--is-open {
-    &.menu-button {
-      transform: translate(-28px, -23px);
-    }
-  }
-}
 @media screen and (max-width: 1279px) {
   .menu-button--is-open {
     &.menu-button {
       transform: translate(-18px, -23px);
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-button--is-open {
+    &.menu-button {
+      transform: translate(-28px, -23px);
     }
   }
 }

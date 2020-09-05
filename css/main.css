@@ -109,7 +109,7 @@ header {
   padding: 10px 0;
   border: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu-button-cross {
@@ -156,7 +156,7 @@ header {
     right: 25%;
     width: 254px;
     height: 500px;
-    padding-top: 123px;
+    padding-top: 60px;
     text-align: center;
     overflow: hidden;
     background-color: #E17992;
@@ -187,17 +187,17 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu-button--is-open.menu-button {
-    -webkit-transform: translate(-28px, -23px);
-            transform: translate(-28px, -23px);
-  }
-}
-
 @media screen and (max-width: 1279px) {
   .menu-button--is-open.menu-button {
     -webkit-transform: translate(-18px, -23px);
             transform: translate(-18px, -23px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-button--is-open.menu-button {
+    -webkit-transform: translate(-28px, -23px);
+            transform: translate(-28px, -23px);
   }
 }
 
@@ -284,9 +284,47 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .button-buy {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .button-buy {
     margin-left: 110px;
+  }
+}
+
+.button-buy-menu {
+  width: 159px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 22px;
+  border: none;
+  padding: 12px 37px;
+  color: #D41443;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 18%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1279px) {
+  .button-buy-menu {
+    display: none;
   }
 }
 
@@ -308,16 +346,16 @@ header {
   .sait-nav-link:last-child {
     border-bottom: 1px solid #e18298;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .button-buy {
-    display: none;
-  }
   .menu-button--is-open .button-buy {
     display: block;
     position: absolute;
     z-index: 4;
+  }
+}
+
+@media screen and (max-width: 1279 px) {
+  .button-buy {
+    display: none;
   }
 }
 
@@ -342,7 +380,7 @@ header {
 }
 
 .logo-company {
-  z-index: 2;
+  z-index: 1;
 }
 
 .title-hero {
